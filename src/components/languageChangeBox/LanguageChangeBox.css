@@ -1,0 +1,14 @@
+.LanguageChangeBox{
+    bottom:2%;
+    position:absolute;
+    margin: 0 auto;
+}
+.FlagImageWrapper{
+    position: relative;
+    width:45px;
+}
+.LanguageBoxFlag{
+    cursor: pointer;
+    width:100%;
+    border:solid black 1px;
+}
