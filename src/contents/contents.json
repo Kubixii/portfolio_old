@@ -8,7 +8,7 @@
         "aboutMe": {
             "introduction": "Cześć, nazywam się Jakub Filipek",
             "whatIDo": "Junior Web Developer (React.js)",
-            "whoIAm": "Jestem studentem Informatyki Stosowanej na Politechnice Krakowskiej. Interesuję się programowaniem, wszystkim co związane z technologią, a w szczególności smartfonami, podzespołami komputerowymi i tworzeniem inteligentnego domu. Zdecydowanie jestem majsterkowiczem. Poza tym gram w gry, słucham EDM i odpoczywam jeżdżąc na rowerze."
+            "whoIAm": "Jestem studentem Informatyki Stosowanej na Politechnice Krakowskiej. Interesuję się programowaniem, wszystkim co związane z technologią, a w szczególności smartfonami, podzespołami komputerowymi i tworzeniem inteligentnego domu. Lubię majstrować przy różnych rzeczach. Poza tym gram w gry, słucham EDM i odpoczywam jeżdżąc na rowerze."
         }
     },
     "en": {
@@ -20,7 +20,7 @@
         "aboutMe": {
             "introduction": "Hi, my name Jakub Filipek",
             "whatIDo": "Junior Web Developer (React.js)",
-            "whoIAm": "I'm a Applied Computer Science student at Politechnika Krakowska. Interested in programming, everything technology related especialy smartphones, computer components and making my house intelligent. I'm definetly a tinkerer. Apart from that I play some games, listen to some EDM and relax on a bike ride."
+            "whoIAm": "I'm a Applied Computer Science student at Politechnika Krakowska. Interested in programming, everything technology related especialy smartphones, computer components and making my house intelligent. I like to tinker with stuff. Apart from that I play some games, listen to some EDM and relax on a bike ride."
         }
     }
 }

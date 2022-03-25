@@ -3,7 +3,20 @@
     src: url('../../fonts/static/Inter-Bold.ttf');
   }
 
+@keyframes show{
+    from { margin-left:-10rem}
+    to { margin-left:0}
+}
+
+@keyframes hamburgerMenuHide{
+    from {transform:translate(1rem,1rem);}
+    to {transform:translate(-9rem,1rem);}
+}
+
 nav{
+    animation-name:show;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in;
     margin:0;
     border:0;
     background-color: #38383b;
@@ -17,6 +30,14 @@ nav{
     position: fixed;
     justify-content: center;
     font-family:'Inter-Bold';
+}
+.burgerMenu{
+    animation-name: hamburgerMenuHide;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in;
+    width:5rem;
+    position:absolute;
+    transform:translate(-9rem,1rem);
 }
 .navigationList{
     flex-direction: column;

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 550px) {
+    main{
+        transition: margin-left 0.5s ease-in;
+        margin-left:0;
+    }
+  }

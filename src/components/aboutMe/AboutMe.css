@@ -12,11 +12,12 @@ article{
     font-family: 'Inter-Extra-Bold';
     padding-top:25vh;
     padding-left:10vw;
+    padding-bottom:15vh;
 }
 .aboutMe{
     font-size:4vh;
     background-color:#1c1d20;
-    color:#c8cbd6;
+    color:#e5e6e7;
     font-family: 'Inter-Bold';
 }
 h1{

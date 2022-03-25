@@ -1,4 +1,5 @@
 import './Main.css'
+import './Main-mobile.css'
 
 import AboutMe from '../aboutMe/AboutMe';
 import Contact from '../contact/Contact';

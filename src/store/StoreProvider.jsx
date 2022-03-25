@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 import contents from '../contents/contents.json';
 
@@ -8,6 +8,11 @@ const StoreProvider = ({ children }) => {
     const [currentLanguage, setCurrentLanguage] = useState('pl')
     const [languageText, setLanguageText] = useState(contents.pl);
     const [currentPage, setCurrentPage] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 550) setIsMobile(true)
+    }, [])
 
     const switchLanguage = () => {
         if (currentLanguage === 'pl') {
@@ -25,6 +30,7 @@ const StoreProvider = ({ children }) => {
             currentLanguage,
             languageText,
             currentPage,
+            isMobile,
             switchLanguage,
             setCurrentPage
         }}>
