@@ -3,8 +3,8 @@ import './LanguageChangeBox.css'
 import React, { useContext } from 'react'
 
 import { StoreContext } from '../../store/StoreProvider'
-import polish_flag from '../../resources/polish_flag.png'
-import uk_flag from '../../resources/uk_flag.png'
+import polish_flag from '../../resources/sidebar/polish_flag.png'
+import uk_flag from '../../resources/sidebar/uk_flag.png'
 
 const LanguageChangeBox = () => {
 

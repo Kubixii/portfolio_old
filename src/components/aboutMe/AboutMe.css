@@ -8,6 +8,13 @@
     src: url('../../fonts/static/Inter-Bold.ttf');
 }
 
+@keyframes slide-in{
+    to {
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
 article{
     font-family: 'Inter-Extra-Bold';
     padding-top:25vh;
@@ -21,12 +28,18 @@ article{
     font-family: 'Inter-Bold';
 }
 h1{
+    animation: 0.6s slide-in 0.1s ease-in forwards;
+    opacity:0;
+    transform:translateX(10%);
     padding:0.5rem;
+
 }
-p{
+.whatIDo{
+    animation: 0.5s slide-in 0.15s ease-in forwards;
+    transform:translateX(-10%);
+    opacity:0;
     font-size:3vh;
-    padding-top: 0.5vh;
-    padding-left:1vw
+    padding-left:2vh;
 }
 .whoIAm{
     font-size:2.5vh;
@@ -36,4 +49,9 @@ p{
     margin:15vh 15vw;
     padding-right:5vw;
     background-color:#3a3d44;
+}
+.whoIAm p{
+    font-size:3vh;
+    padding-top: 0.5vh;
+    padding-left:1vw
 }

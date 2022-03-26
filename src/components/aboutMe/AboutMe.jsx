@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div className='aboutMe panel'>
             <article>
                 <h1>{aboutMe.introduction}</h1>
-                <p>{aboutMe.whatIDo}</p>
+                <div className='whatIDo'><p>{aboutMe.whatIDo}</p></div>
                 <div className='whoIAm'>
                     <p>{aboutMe.whoIAm}</p>
                 </div>

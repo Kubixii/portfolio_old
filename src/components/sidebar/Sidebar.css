@@ -14,9 +14,10 @@
 }
 
 nav{
-    animation-name:show;
+    /* animation-name:show;
     animation-duration:0.5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in; */
+    z-index:5;
     margin:0;
     border:0;
     background-color: #38383b;
@@ -32,6 +33,7 @@ nav{
     font-family:'Inter-Bold';
 }
 .burgerMenu{
+    z-index:3;
     animation-name: hamburgerMenuHide;
     animation-duration:0.5s;
     animation-timing-function: ease-in;

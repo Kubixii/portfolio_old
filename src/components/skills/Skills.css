@@ -1,3 +1,13 @@
 .skills{
     background-color: #353a50;
 }
+.skillsWrapper{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-left:15vw;
+    padding-right:10vw;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+}

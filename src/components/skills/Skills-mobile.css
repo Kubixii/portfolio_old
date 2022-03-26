@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1000px) {
+    .skillsWrapper{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left:10vw;
+        padding-right:10vw;
+        padding-top: 8vh;
+        padding-bottom: 5vh;
+    }
+}

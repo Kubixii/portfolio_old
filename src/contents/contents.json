@@ -9,7 +9,61 @@
             "introduction": "Cześć, nazywam się Jakub Filipek",
             "whatIDo": "Junior Web Developer (React.js)",
             "whoIAm": "Jestem studentem Informatyki Stosowanej na Politechnice Krakowskiej. Interesuję się programowaniem, wszystkim co związane z technologią, a w szczególności smartfonami, podzespołami komputerowymi i tworzeniem inteligentnego domu. Lubię majstrować przy różnych rzeczach. Poza tym gram w gry, słucham EDM i odpoczywam jeżdżąc na rowerze."
-        }
+        },
+        "skills": [
+            {
+                "name": "HTML",
+                "imageURL": "Html_logo.png"
+            },
+            {
+                "name": "CSS",
+                "imageURL": "CSS3_logo.png"
+            },
+            {
+                "name": "Javascript",
+                "imageURL": "javascript_logo.png"
+            },
+            {
+                "name": "React.js",
+                "imageURL": "React-icon.png"
+            },
+            {
+                "name": "PHP",
+                "imageURL": "PHP-logo.png"
+            },
+            {
+                "name": "SQL",
+                "imageURL": "sql_logo.png"
+            },
+            {
+                "name": "PhpMyAdmin",
+                "imageURL": "PhpMyAdmin_logo.png"
+            },
+            {
+                "name": "Windows",
+                "imageURL": "Windows_logo.png"
+            },
+            {
+                "name": "Trouleshooting",
+                "imageURL": "troubleshooting_logo.png"
+            },
+            {
+                "name": "Gimp",
+                "imageURL": "gimp_logo.png"
+            },
+            {
+                "name": "Microsoft Office",
+                "imageURL": "ms_office_logo.png"
+            },
+            {
+                "name": "Język Angielski (C1)",
+                "imageURL": "uk_flag.png"
+            },
+            {
+                "name": "Komunikacja",
+                "imageURL": "communication_logo.png"
+            }
+        ]
     },
     "en": {
         "navigationList": {
@@ -21,6 +75,60 @@
             "introduction": "Hi, my name Jakub Filipek",
             "whatIDo": "Junior Web Developer (React.js)",
             "whoIAm": "I'm a Applied Computer Science student at Politechnika Krakowska. Interested in programming, everything technology related especialy smartphones, computer components and making my house intelligent. I like to tinker with stuff. Apart from that I play some games, listen to some EDM and relax on a bike ride."
-        }
+        },
+        "skills": [
+            {
+                "name": "HTML",
+                "imageURL": "Html_logo.png"
+            },
+            {
+                "name": "CSS",
+                "imageURL": "CSS3_logo.png"
+            },
+            {
+                "name": "Javascript",
+                "imageURL": "javascript_logo.png"
+            },
+            {
+                "name": "React.js",
+                "imageURL": "React-icon.png"
+            },
+            {
+                "name": "PHP",
+                "imageURL": "PHP-logo.png"
+            },
+            {
+                "name": "SQL",
+                "imageURL": "sql_logo.png"
+            },
+            {
+                "name": "PhpMyAdmin",
+                "imageURL": "PhpMyAdmin_logo.png"
+            },
+            {
+                "name": "Windows",
+                "imageURL": "Windows_logo.png"
+            },
+            {
+                "name": "Trouleshooting",
+                "imageURL": "troubleshooting_logo.png"
+            },
+            {
+                "name": "Gimp",
+                "imageURL": "gimp_logo.png"
+            },
+            {
+                "name": "Microsoft Office",
+                "imageURL": "ms_office_logo.png"
+            },
+            {
+                "name": "English (C1)",
+                "imageURL": "uk_flag.png"
+            },
+            {
+                "name": "Communication",
+                "imageURL": "communication_logo.png"
+            }
+        ]
     }
 }
