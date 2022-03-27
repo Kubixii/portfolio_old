@@ -16,12 +16,12 @@ const Main = () => {
         const contactOffset = document.getElementsByClassName('contact')[0].offsetTop
         const top = window.pageYOffset || document.documentElement.scrollTop
 
-        if (top > skillsOffset / 2 && top < contactOffset + (1 / 3 * contactOffset) && !skillsAnimationDone) {
+        if (top > skillsOffset / 2 && top < contactOffset * 2 && !skillsAnimationDone) {
             setSkillsAnimationDone(true)
             const skillBoxes = document.getElementsByClassName('skillBox');
 
             for (let i = 0; i < skillBoxes.length; i++) {
-                setTimeout(() => slideUpAnimation(skillBoxes[i]), 250 + (i * 70))
+                setTimeout(() => slideUpAnimation(skillBoxes[i]), 250 + (i * 80))
             }
         }
     }

@@ -1,3 +1,72 @@
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url('../../fonts/static/Inter-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Inter-Light;
+    src: url('../../fonts/static/Inter-Light.ttf');
+}
+
 .contact{
-background-color: #272f46;
+    background-color: #272f46;
+    color:#849bee;
+    font-family: Inter-ExtraBold;
+    text-align:center;
+}
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.formTitle{
+    font-size:2.5vw;
+    padding:2%;
+}
+
+.formEmail,.formMessage, .formButton{
+    padding:1vw;
+}
+.formEmail input, .formMessage textarea, .formButton button{
+    border: none;
+    padding:1%;
+    border-radius: 20px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 7px 7px 0px 0px #7086c9;
+    background-color:rgba(132, 143, 173, 0.3);
+    color:#e5e6e9;
+    font-size: 2vh;
+    font-family: Inter-Light;
+}
+.formEmail input::placeholder, .formMessage textarea::placeholder{
+    color:#a4a6ac;
+}
+.formEmail input:focus, .formMessage textarea:focus{
+    outline:none;
+    transform: scale(100.5%);
+    box-shadow: 7px 7px 0px 0px #6174ad;
+    background-color:rgba(132, 143, 173, 0.35);
+}
+
+.formEmail input{
+    width:40vw;
+    height: 3vh;
+}
+
+.formMessage textarea{
+    resize:none;
+    width:40vw;
+    height:40vh;
+}
+
+.formButton button{
+    width:30vw;
+}
+.formButton button:hover{
+    cursor: pointer;
+}
+.formButton button:active{
+    background-color:rgba(132, 143, 173, 0.2);
+    box-shadow: 7px 7px 0px 0px #6174ad;
 }

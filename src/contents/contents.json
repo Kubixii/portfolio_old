@@ -72,9 +72,9 @@
             "contact": "Contact me"
         },
         "aboutMe": {
-            "introduction": "Hi, my name Jakub Filipek",
+            "introduction": "Hi, my name is Jakub Filipek",
             "whatIDo": "Junior Web Developer (React.js)",
-            "whoIAm": "I'm a Applied Computer Science student at Politechnika Krakowska. Interested in programming, everything technology related especialy smartphones, computer components and making my house intelligent. I like to tinker with stuff. Apart from that I play some games, listen to some EDM and relax on a bike ride."
+            "whoIAm": "I'm an Applied Computer Science student at Politechnika Krakowska. Interested in programming, everything technology related especialy smartphones, computer components and making my house intelligent. I like to tinker with stuff. Apart from that I play some games, listen to some EDM and relax on a bike ride."
         },
         "skills": [
             {

@@ -7,6 +7,7 @@ import { StoreContext } from '../../store/StoreProvider';
 const AboutMe = () => {
 
     const { languageText: { aboutMe } } = useContext(StoreContext)
+
     return (
         <div className='aboutMe panel'>
             <article>
