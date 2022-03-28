@@ -6,8 +6,8 @@
 }
 
 .skillBox{
-    width:20vh;
-    height:20vh;
+    width:200px;
+    height:200px;
     background-color:rgb(133, 150, 156);
     margin:1rem;
     text-align: center;
@@ -33,5 +33,5 @@
 }
 
 .skillImageWrapper img{
-    width:100%;
+    width:5rem;
 }
