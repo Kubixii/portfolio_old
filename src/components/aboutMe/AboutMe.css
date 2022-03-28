@@ -15,6 +15,13 @@
     }
 }
 
+@keyframes whoIAm-slide-in{
+    to {
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
 article{
     font-family: 'Inter-Extra-Bold';
     padding-top:25vh;
@@ -42,6 +49,7 @@ h1{
     padding-left:2vh;
 }
 .whoIAm{
+    transform:translateX(50%);
     font-size:2.5vh;
     border-radius: 20px 20px 100px 20px;
     padding:1.5vh;
@@ -49,9 +57,15 @@ h1{
     margin:15vh 15vw;
     padding-right:5vw;
     background-color:#3a3d44;
+    opacity:0;
+    animation: 0.5s slide-in 0.20s ease-in forwards;
+    overflow:visible;
 }
 .whoIAm p{
+    transform:translateY(15%);
     font-size:3vh;
     padding-top: 0.5vh;
-    padding-left:1vw
+    padding-left:1vw;
+    opacity:0;
+    animation: 0.5s whoIAm-slide-in 0.65s ease-in forwards;
 }

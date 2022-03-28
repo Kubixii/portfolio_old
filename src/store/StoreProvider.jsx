@@ -11,7 +11,7 @@ const StoreProvider = ({ children }) => {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        if (window.innerWidth < 550) setIsMobile(true)
+        if (window.innerWidth < 750) setIsMobile(true)
     }, [])
 
     const switchLanguage = () => {

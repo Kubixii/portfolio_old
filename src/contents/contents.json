@@ -63,7 +63,14 @@
                 "name": "Komunikacja",
                 "imageURL": "communication_logo.png"
             }
-        ]
+        ],
+        "contact": {
+            "title": "Skontaktuj się ze mną",
+            "email": "E-mail",
+            "content": "Treść...",
+            "submit": "Wyślij wiadomość",
+            "feedback": "Wiadomość została wysłana"
+        }
     },
     "en": {
         "navigationList": {
@@ -129,6 +136,13 @@
                 "name": "Communication",
                 "imageURL": "communication_logo.png"
             }
-        ]
+        ],
+        "contact": {
+            "title": "Contact me",
+            "email": "E-mail",
+            "content": "Message...",
+            "submit": "Send message",
+            "feedback": "Message has been sent"
+        }
     }
 }

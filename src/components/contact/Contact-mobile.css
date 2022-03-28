@@ -1,0 +1,7 @@
+@media only screen and (max-width: 750px) {
+    .formEmail input, .formMessage textarea, .formButton button{
+        width:85%;
+        padding:1vh;
+        margin:2vh;
+    }
+}

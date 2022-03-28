@@ -36,7 +36,7 @@ const Sidebar = () => {
     }
     return (
         <>
-            {isMobile ? <><div className='backdrop' onClick={hideSidebar}></div><img src={menuImg} alt="hamburger menu icon" className='burgerMenu' onClick={showSidebar} /> </> : null}
+            <div className='backdrop' onClick={hideSidebar}></div><img src={menuImg} alt="hamburger menu icon" className='burgerMenu' onClick={showSidebar} />
             <nav>
                 <LanguageChangeBox />
                 <ul className='navigationList'>
