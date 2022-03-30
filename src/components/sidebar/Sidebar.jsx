@@ -18,7 +18,8 @@ const Sidebar = () => {
     const insertAnimation = () => {
         if (isMobile) document.querySelector('nav').style.animation = "show 0.5s ease-in";
     }
-    const test = (item) => {
+
+    const navigationHandler = (item) => {
         const panels = ['.aboutMe', '.skills', '.contact']
         setCurrentPage(item);
         document.querySelector(panels[item]).scrollIntoView({
@@ -40,9 +41,9 @@ const Sidebar = () => {
             <nav>
                 <LanguageChangeBox />
                 <ul className='navigationList'>
-                    <li className='navigationListItem' onClick={() => test(0)}>{languageText.navigationList.aboutMe}</li>
-                    <li className='navigationListItem' onClick={() => test(1)}>{languageText.navigationList.skills}</li>
-                    <li className='navigationListItem' onClick={() => test(2)}>{languageText.navigationList.contact}</li>
+                    <li className='navigationListItem' onClick={() => navigationHandler(0)}>{languageText.navigationList.aboutMe}</li>
+                    <li className='navigationListItem' onClick={() => navigationHandler(1)}>{languageText.navigationList.skills}</li>
+                    <li className='navigationListItem' onClick={() => navigationHandler(2)}>{languageText.navigationList.contact}</li>
                 </ul>
             </nav>
         </>

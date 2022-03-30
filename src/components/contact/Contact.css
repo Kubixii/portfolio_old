@@ -8,67 +8,98 @@
     src: url('../../fonts/static/Inter-Light.ttf');
 }
 
-.contact{
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact {
     background-color: #272f46;
     /* color:#849bee; */
-    color:#dee1ec;
+    color: #dee1ec;
     font-family: Inter-ExtraBold;
-    text-align:center;
+    text-align: center;
 }
-.formWrapper{
+
+.formWrapper {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
 }
-.formTitle{
-    font-size:2.5vw;
-    padding:2%;
+
+.formTitle {
+    font-size: 2.5vw;
+    padding: 2%;
 }
 
-.formEmail,.formMessage, .formButton{
-    padding:1vw;
+.formTitle,
+.formMessage {
+    transform: translateX(-10vw);
+    opacity: 0;
 }
-.formEmail input, .formMessage textarea, .formButton button{
-    width:40vw;
+
+.formEmail,
+.formButton {
+    transform: translateX(10vw);
+    opacity: 0;
+}
+
+.form .formEmail,
+.formMessage,
+.formButton {
+    padding: 1vw;
+}
+
+.formEmail input,
+.formMessage textarea,
+.formButton button {
+    width: 40vw;
     transform: scale(100%);
     transition: transform 0.1s ease-in-out;
     border: none;
-    padding:1%;
+    padding: 1%;
     border-radius: 20px;
     border-bottom-right-radius: 40px;
     /* box-shadow: 7px 7px 0px 0px #7086c9; */
     box-shadow: 7px 7px 0px 0px #4e5d8a;
-    background-color:rgba(132, 143, 173, 0.3);
+    background-color: rgba(132, 143, 173, 0.3);
     /* color:#e5e6e9; */
-    color:#ffffff;
+    color: #ffffff;
     font-size: 2vh;
     font-family: Inter-Light;
 }
-.formEmail input::placeholder, .formMessage textarea::placeholder{
-    color:#a4a6ac;
+
+.formEmail input::placeholder,
+.formMessage textarea::placeholder {
+    color: #a4a6ac;
 }
-.formEmail input:focus, .formMessage textarea:focus{
-    outline:none;
+
+.formEmail input:focus,
+.formMessage textarea:focus {
+    outline: none;
     transform: scale(101%);
     transition: transform 0.1s ease-in-out;
     box-shadow: 7px 7px 0px 0px #6174ad;
-    background-color:rgba(132, 143, 173, 0.35);
+    background-color: rgba(132, 143, 173, 0.35);
 }
 
-.formEmail input{
+.formEmail input {
     height: 3vh;
 }
 
-.formMessage textarea{
-    resize:none;
-    height:40vh;
+.formMessage textarea {
+    resize: none;
+    height: 40vh;
 }
 
-.formButton button:hover{
+.formButton button:hover {
     cursor: pointer;
 }
-.formButton button:active{
-    background-color:rgba(132, 143, 173, 0.2);
+
+.formButton button:active {
+    background-color: rgba(132, 143, 173, 0.2);
     box-shadow: 7px 7px 0px 0px #6174ad;
 }

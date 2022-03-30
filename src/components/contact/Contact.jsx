@@ -6,7 +6,6 @@ import { ValidationError, useForm } from '@formspree/react';
 
 import { StoreContext } from '../../store/StoreProvider';
 
-//TODO mobile styling, text in json file, animations
 const Skills = () => {
 
     const [state, handleSubmit] = useForm("xbjwagrl");
