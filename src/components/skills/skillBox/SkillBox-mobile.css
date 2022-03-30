@@ -1,21 +1,20 @@
-@media only screen and (max-width: 750px) {
-    .skillBox{
-        width:30vw;
-        height:30vw;
-    }
-    .skillBox p{
-        margin-top:1vh;
-        font-size:4vw;
+@media only screen and (max-width: 750x) {
+    .skillBox {
+        width: 50vw;
+        height: 50vw;
+        position: relative;
+        text-align: center;
     }
 
-    .skillImageWrapper{
-        position:absolute;
-        margin:auto 30%;
-        bottom:1rem;
-        width:12vw;
+    .skillBox p {
+        margin-top: 1vh;
+        font-size: 100%;
     }
-    
-    .skillImageWrapper img{
-        width:10vw;
+
+    .skillImageWrapper {
+        left: 0;
+        text-align: center;
+        bottom: 1rem;
+        width: 100%;
     }
 }
