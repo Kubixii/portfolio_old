@@ -20,7 +20,7 @@ const Sidebar = () => {
     }
 
     const navigationHandler = (item) => {
-        const panels = ['.aboutMe', '.skills', '.contact']
+        const panels = ['.aboutMe', '.skills', '.links', '.contact']
         setCurrentPage(item);
         document.querySelector(panels[item]).scrollIntoView({
             behavior: 'smooth'
@@ -43,7 +43,8 @@ const Sidebar = () => {
                 <ul className='navigationList'>
                     <li className='navigationListItem' onClick={() => navigationHandler(0)}>{languageText.navigationList.aboutMe}</li>
                     <li className='navigationListItem' onClick={() => navigationHandler(1)}>{languageText.navigationList.skills}</li>
-                    <li className='navigationListItem' onClick={() => navigationHandler(2)}>{languageText.navigationList.contact}</li>
+                    <li className='navigationListItem' onClick={() => navigationHandler(2)}>{languageText.navigationList.links}</li>
+                    <li className='navigationListItem' onClick={() => navigationHandler(3)}>{languageText.navigationList.contact}</li>
                 </ul>
             </nav>
         </>

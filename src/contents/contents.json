@@ -3,6 +3,7 @@
         "navigationList": {
             "aboutMe": "O mnie",
             "skills": "Umiejętności",
+            "links": "Linki",
             "contact": "Kontakt"
         },
         "aboutMe": {
@@ -64,6 +65,18 @@
                 "imageURL": "communication_logo.png"
             }
         ],
+        "links": [
+            {
+                "name": "Github",
+                "imageURL": "GitHub-Logo.png",
+                "URL": "https://github.com/Kubixii"
+            },
+            {
+                "name": "LinkedIn",
+                "imageURL": "linkedin-logo.png",
+                "URL": "https://www.linkedin.com/in/jakub-filipek-4286a01b2/"
+            }
+        ],
         "contact": {
             "title": "Skontaktuj się ze mną",
             "email": "E-mail",
@@ -76,6 +89,7 @@
         "navigationList": {
             "aboutMe": "About me",
             "skills": "My skills",
+            "links": "Links",
             "contact": "Contact me"
         },
         "aboutMe": {
@@ -135,6 +149,18 @@
             {
                 "name": "Communication",
                 "imageURL": "communication_logo.png"
+            }
+        ],
+        "links": [
+            {
+                "name": "Github",
+                "imageURL": "GitHub-Logo.png",
+                "URL": "https://github.com/Kubixii"
+            },
+            {
+                "name": "LinkedIn",
+                "imageURL": "linkedin-logo.png",
+                "URL": "https://www.linkedin.com/in/jakub-filipek-4286a01b2/"
             }
         ],
         "contact": {

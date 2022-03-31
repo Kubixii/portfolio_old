@@ -1,0 +1,38 @@
+.link {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #354268;
+    border-radius: 20px;
+    border-bottom-left-radius: 45px;
+    box-shadow: 10px 10px 2px #4e5d88;
+    margin: 5vw;
+    font-family: Inter-Bold;
+    text-align: center;
+    justify-content: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(102, 100, 100);
+}
+
+.link p {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.linkImageWrapper {
+    margin: 1rem;
+}
+
+.linkImageWrapper img {
+    width: 100%;
+}

@@ -1,8 +1,8 @@
-.skills {
-    background-color: #353a50;
+.links {
+    background-color: #323644;
 }
 
-.skillsWrapper {
+.linksWrapper {
     min-height: 100vh;
     display: flex;
     justify-content: center;

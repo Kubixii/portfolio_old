@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 import AboutMe from '../aboutMe/AboutMe';
 import Contact from '../contact/Contact';
+import Links from '../links/Links';
 import Skills from '../skills/Skills';
 
 const Main = () => {
@@ -14,10 +15,11 @@ const Main = () => {
 
     const checkHeight = () => {
         const skillsOffset = document.getElementsByClassName('skills')[0].offsetTop
+        const linksOffset = document.getElementsByClassName('links')[0].offsetTop
         const contactOffset = document.getElementsByClassName('contact')[0].offsetTop
         const top = window.pageYOffset || document.documentElement.scrollTop
 
-        if (top > skillsOffset / 2 && top < contactOffset / 2 && !skillsAnimationDone) {
+        if (top > skillsOffset / 2 && top < linksOffset / 2 && !skillsAnimationDone) {
             setSkillsAnimationDone(true)
             const skillBoxes = document.getElementsByClassName('skillBox');
 
@@ -57,6 +59,7 @@ const Main = () => {
         <main>
             <AboutMe />
             <Skills />
+            <Links />
             <Contact />
         </main>
     );
