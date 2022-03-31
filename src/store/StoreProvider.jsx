@@ -10,9 +10,14 @@ const StoreProvider = ({ children }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const [isMobile, setIsMobile] = useState(false);
 
+    const [skillsAnimationDone, setSkillsAnimationDone] = useState(false)
+    const [contactAnimationDone, setContactAnimationDone] = useState(false)
+    const [linksAnimationDone, setLinksAnimationDone] = useState(false)
+
     useEffect(() => {
         if (window.innerWidth < 750) setIsMobile(true)
-    }, [])
+        console.log(skillsAnimationDone);
+    }, [skillsAnimationDone])
 
     const switchLanguage = () => {
         if (currentLanguage === 'pl') {
@@ -31,6 +36,12 @@ const StoreProvider = ({ children }) => {
             languageText,
             currentPage,
             isMobile,
+            skillsAnimationDone,
+            contactAnimationDone,
+            linksAnimationDone,
+            setSkillsAnimationDone,
+            setContactAnimationDone,
+            setLinksAnimationDone,
             switchLanguage,
             setCurrentPage
         }}>

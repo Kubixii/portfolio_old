@@ -3,7 +3,7 @@ import './Sidebar-mobile.css'
 
 import React, { useContext, useEffect } from 'react'
 
-import LanguageChangeBox from '../languageChangeBox/LanguageChangeBox';
+import LanguageChangeBox from './languageChangeBox/LanguageChangeBox';
 import { StoreContext } from '../../store/StoreProvider';
 import menuImg from '../../resources/sidebar/Hamburger_icon.png'
 

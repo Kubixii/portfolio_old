@@ -1,17 +1,17 @@
 import './Main.css'
 import './Main-mobile.css'
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import AboutMe from '../aboutMe/AboutMe';
 import Contact from '../contact/Contact';
 import Links from '../links/Links';
 import Skills from '../skills/Skills';
+import { StoreContext } from '../../store/StoreProvider';
 
 const Main = () => {
 
-    const [skillsAnimationDone, setSkillsAnimationDone] = useState(false)
-    const [contactAnimationDone, setContactAnimationDone] = useState(false)
+    const { skillsAnimationDone, setSkillsAnimationDone, contactAnimationDone, setContactAnimationDone, linksAnimationDone, setLinksAnimationDone } = useContext(StoreContext)
 
     const checkHeight = () => {
         const skillsOffset = document.getElementsByClassName('skills')[0].offsetTop
@@ -19,16 +19,34 @@ const Main = () => {
         const contactOffset = document.getElementsByClassName('contact')[0].offsetTop
         const top = window.pageYOffset || document.documentElement.scrollTop
 
-        if (top > skillsOffset / 2 && top < linksOffset / 2 && !skillsAnimationDone) {
-            setSkillsAnimationDone(true)
-            const skillBoxes = document.getElementsByClassName('skillBox');
+        console.log("BEFORE IF (should be false only once)" + skillsAnimationDone);
 
-            for (let i = 0; i < skillBoxes.length; i++) {
-                setTimeout(() => slideUpAnimation(skillBoxes[i]), 250 + (i * 80))
-            }
+        if (!skillsAnimationDone && top > skillsOffset / 2 && top < linksOffset / 2) {
+            setSkillsAnimationDone(true)
+
+            console.log("IF EXECUTED " + skillsAnimationDone);
+
+            //TODO figure out why this if is executing
+
+            const skillBoxes = Array.from(document.getElementsByClassName('skillBox'));
+
+            skillBoxes.map((skillBox, index) => {
+                return skillBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
+            })
+
+
         }
 
-        if (top > contactOffset * (2 / 3) && !contactAnimationDone) {
+        if (top > linksOffset * (4 / 5) && !linksAnimationDone) {
+            setLinksAnimationDone(true);
+            const linksBoxes = Array.from(document.getElementsByClassName('link'));
+
+            linksBoxes.map((linkBox, index) => {
+                return linkBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
+            })
+        }
+
+        if (top > contactOffset * (4 / 5) && !contactAnimationDone) {
             setContactAnimationDone(true)
             const title = document.getElementsByClassName("formTitle")[0];
             const email = document.getElementsByClassName("formEmail")[0];
@@ -40,10 +58,6 @@ const Main = () => {
             message.style.animation = "0.4s slide-in 0.5s ease-in forwards";
             button.style.animation = "0.4s slide-in 0.7s ease-in forwards";
         }
-    }
-
-    const slideUpAnimation = element => {
-        element.style.animation = "box-in 0.3s ease-in forwards";
     }
 
     useEffect(() => {

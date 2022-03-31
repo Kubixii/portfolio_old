@@ -12,6 +12,8 @@
     font-family: Inter-Bold;
     text-align: center;
     justify-content: center;
+    transform: translateY(10vh);
+    opacity: 0;
 }
 
 a {

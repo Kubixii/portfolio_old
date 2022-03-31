@@ -8,12 +8,12 @@
     src: url('../../fonts/static/Inter-Light.ttf');
 }
 
-@keyframes slide-in {
+/* @keyframes slide-in {
     to {
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
 .contact {
     background-color: #272f46;
