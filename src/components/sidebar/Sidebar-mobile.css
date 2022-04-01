@@ -1,48 +1,67 @@
 @media only screen and (max-width: 750px) {
 
-    @keyframes hide{
-        from { margin-left:0}
-        to { margin-left:-10rem }
+    @keyframes hide {
+        from {
+            margin-left: 0
+        }
+
+        to {
+            margin-left: -10rem
+        }
     }
 
-    @keyframes show{
-        from { margin-left:-10rem}
-        to { margin-left:0}
+    @keyframes show {
+        from {
+            margin-left: -10rem
+        }
+
+        to {
+            margin-left: 0
+        }
     }
 
-    @keyframes hamburgerMenuShow{
-        from {transform:translate(-9rem,1rem);}
-        to {transform:translate(1rem,1rem);}
+    @keyframes hamburgerMenuShow {
+        from {
+            transform: translate(-9rem, 1rem);
+        }
+
+        to {
+            transform: translate(1rem, 1rem);
+        }
     }
 
-    nav{
-        animation-name:hide;
-        animation-duration:0.5s;
+    nav {
+        animation-name: hide;
+        animation-duration: 0.5s;
         animation-timing-function: ease-in;
-        margin-left:-10rem;
+        margin-left: -10rem;
     }
-    .backdrop{
-        position:fixed;
-        height:100vh;
+
+    .backdrop {
+        position: fixed;
+        height: 100vh;
         width: 100%;
-        margin-left:10rem;
-        display:none;
-    }
-    .backdropShow{
-        display:block;
-    }
-    .navOpen{
-        animation-name:show;
-        animation-duration:0.1s;
-        animation-timing-function: ease-in;
-        margin-left:0rem;
+        margin-left: 10rem;
+        z-index: 15;
+        display: none;
     }
 
-    .burgerMenu{
-        position:fixed;
-        animation-name: hamburgerMenuShow;
-        animation-duration:0.5s;
-        animation-timing-function: ease-in;
-        transform:translate(1rem,1rem);
+    .backdropShow {
+        display: block;
     }
-  }
+
+    .navOpen {
+        animation-name: show;
+        animation-duration: 0.1s;
+        animation-timing-function: ease-in;
+        margin-left: 0rem;
+    }
+
+    .burgerMenu {
+        position: fixed;
+        animation-name: hamburgerMenuShow;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        transform: translate(1rem, 1rem);
+    }
+}

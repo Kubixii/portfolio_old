@@ -1,7 +1,7 @@
 import './Main.css'
 import './Main-mobile.css'
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import AboutMe from '../aboutMe/AboutMe';
 import Contact from '../contact/Contact';
@@ -19,19 +19,14 @@ const Main = () => {
         const contactOffset = document.getElementsByClassName('contact')[0].offsetTop
         const top = window.pageYOffset || document.documentElement.scrollTop
 
-        console.log("BEFORE IF (should be false only once)" + skillsAnimationDone);
 
-        if (!skillsAnimationDone && top > skillsOffset / 2 && top < linksOffset / 2) {
+        if (!skillsAnimationDone && top > skillsOffset * (4 / 5) && top < linksOffset) {
             setSkillsAnimationDone(true)
-
-            console.log("IF EXECUTED " + skillsAnimationDone);
-
-            //TODO figure out why this if is executing
 
             const skillBoxes = Array.from(document.getElementsByClassName('skillBox'));
 
             skillBoxes.map((skillBox, index) => {
-                return skillBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
+                skillBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
             })
 
 
@@ -42,7 +37,7 @@ const Main = () => {
             const linksBoxes = Array.from(document.getElementsByClassName('link'));
 
             linksBoxes.map((linkBox, index) => {
-                return linkBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
+                linkBox.style.animation = `box-in 0.3s ease-in ${0.25 + (index * 0.08)}s forwards`;
             })
         }
 
@@ -67,7 +62,7 @@ const Main = () => {
         return () => {
             document.removeEventListener("scroll", checkHeight)
         }
-    }, [])
+    })
 
     return (
         <main>

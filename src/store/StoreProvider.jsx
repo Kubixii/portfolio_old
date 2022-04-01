@@ -16,7 +16,6 @@ const StoreProvider = ({ children }) => {
 
     useEffect(() => {
         if (window.innerWidth < 750) setIsMobile(true)
-        console.log(skillsAnimationDone);
     }, [skillsAnimationDone])
 
     const switchLanguage = () => {

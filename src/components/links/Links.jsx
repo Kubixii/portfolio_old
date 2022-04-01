@@ -1,4 +1,5 @@
 import './Links.css'
+import './Links-mobile.css'
 
 import React, { useContext } from 'react';
 

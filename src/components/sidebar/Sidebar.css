@@ -1,57 +1,67 @@
 @font-face {
     font-family: Inter-Bold;
     src: url('../../fonts/static/Inter-Bold.ttf');
-  }
-
-@keyframes show{
-    from { margin-left:-10rem}
-    to { margin-left:0}
 }
 
-@keyframes hamburgerMenuHide{
-    from {transform:translate(1rem,1rem);}
-    to {transform:translate(-9rem,1rem);}
+@keyframes show {
+    from {
+        margin-left: -10rem
+    }
+
+    to {
+        margin-left: 0
+    }
 }
 
-nav{
-    /* animation-name:show;
-    animation-duration:0.5s;
-    animation-timing-function: ease-in; */
-    z-index:5;
-    margin:0;
-    border:0;
+@keyframes hamburgerMenuHide {
+    from {
+        transform: translate(1rem, 1rem);
+    }
+
+    to {
+        transform: translate(-9rem, 1rem);
+    }
+}
+
+nav {
+    z-index: 5;
+    margin: 0;
+    border: 0;
     background-color: #38383b;
-    width:10rem;
-    height:100vh;
-    color:rgb(190, 194, 201);
-    text-align:center;
+    width: 10rem;
+    height: 100vh;
+    color: rgb(190, 194, 201);
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     justify-content: center;
-    font-family:'Inter-Bold';
-}
-.burgerMenu{
-    z-index:3;
-    animation-name: hamburgerMenuHide;
-    animation-duration:0.5s;
-    animation-timing-function: ease-in;
-    width:5rem;
-    position:absolute;
-    transform:translate(-9rem,1rem);
-}
-.navigationList{
-    flex-direction: column;
-    display:flex;
+    font-family: 'Inter-Bold';
 }
 
-.navigationListItem{
+.burgerMenu {
+    z-index: 3;
+    animation-name: hamburgerMenuHide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    width: 5rem;
+    position: absolute;
+    transform: translate(-9rem, 1rem);
+}
+
+.navigationList {
+    flex-direction: column;
+    display: flex;
+}
+
+.navigationListItem {
     list-style-type: none;
     cursor: pointer;
-    margin-top:25px;
-    margin-bottom:25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.navigationListItem:hover{
-    color:rgb(153, 155, 160);
+
+.navigationListItem:hover {
+    color: rgb(153, 155, 160);
 }
