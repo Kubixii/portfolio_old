@@ -18,6 +18,8 @@
     position: relative;
     opacity: 0.0;
     transform: translateY(10vh);
+    display: flex;
+    flex-direction: column;
 }
 
 .skillBox p {
