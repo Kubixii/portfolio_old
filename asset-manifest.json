@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0d451010.css",
+    "main.js": "/portfolio/static/js/main.a3e64faf.js",
+    "static/media/Inter-ExtraBold.ttf": "/portfolio/static/media/Inter-ExtraBold.4575fccf5b3158df637f.ttf",
+    "static/media/Inter-Bold.ttf": "/portfolio/static/media/Inter-Bold.a73db89c43e44ca8f5e0.ttf",
+    "static/media/Inter-Light.ttf": "/portfolio/static/media/Inter-Light.58a136ec3193fa8a63e5.ttf",
+    "static/media/troubleshooting_logo.png": "/portfolio/static/media/troubleshooting_logo.b574383e6fe1ade3e36a.png",
+    "static/media/React-icon.png": "/portfolio/static/media/React-icon.8a6fc0a24a800d1e0f4a.png",
+    "static/media/PhpMyAdmin_logo.png": "/portfolio/static/media/PhpMyAdmin_logo.0cf64bcb3e3cf8cc5388.png",
+    "static/media/PHP-logo.png": "/portfolio/static/media/PHP-logo.00baeb442607d6f50cfe.png",
+    "static/media/gimp_logo.png": "/portfolio/static/media/gimp_logo.9184ca881c609958f764.png",
+    "static/media/sql_logo.png": "/portfolio/static/media/sql_logo.85fb38d6773862e917f4.png",
+    "static/media/CSS3_logo.png": "/portfolio/static/media/CSS3_logo.4e67641bb68b658d9b2b.png",
+    "static/media/ms_office_logo.png": "/portfolio/static/media/ms_office_logo.80ef97871d84d56a4e59.png",
+    "static/media/Windows_logo.png": "/portfolio/static/media/Windows_logo.2d09afce406e4734abaf.png",
+    "static/media/GitHub-Logo.png": "/portfolio/static/media/GitHub-Logo.05525cd9027955dbe054.png",
+    "static/media/Hamburger_icon.png": "/portfolio/static/media/Hamburger_icon.1e20c3a8c70deedb9146.png",
+    "static/media/Html_logo.png": "/portfolio/static/media/Html_logo.33745eadd572612bdf11.png",
+    "static/media/communication_logo.png": "/portfolio/static/media/communication_logo.067c35e0f8cb06fea944.png",
+    "index.html": "/portfolio/index.html",
+    "main.0d451010.css.map": "/portfolio/static/css/main.0d451010.css.map",
+    "main.a3e64faf.js.map": "/portfolio/static/js/main.a3e64faf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d451010.css",
+    "static/js/main.a3e64faf.js"
+  ]
+}
